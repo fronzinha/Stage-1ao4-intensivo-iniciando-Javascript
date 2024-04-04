@@ -3,10 +3,22 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "Roboto", sans-serif;
+
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
 }
 
 ol {
     display: flex;
     flex-direction: column;
-    gap: 15px
+    gap: 7px;
+}
+
+li {
+    padding: 5px;
+    border: solid rgb(5, 4, 4) 1px;
+    cursor: pointer;
 }
