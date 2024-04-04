@@ -21,7 +21,13 @@ um número", caso contrário, exiba a mensagem "Não é um número". Para saber 
 operador typeof */
 
 function verificationNumberOrNot() {
-    alert('Questão 3 em construção')
+    let NumberOrString = prompt("Digite uma string ou um número para saber se é número ou string")
+
+    if (!isNaN(Number(NumberOrString))) {
+        alert('É um número')
+    } else {
+        alert('É uma String')
+    }
 }
 
 /* 4- Crie um script que declare uma variável e verifique se o seu valor
@@ -29,8 +35,15 @@ function verificationNumberOrNot() {
 exiba a mensagem "Não é uma string".
 */
 
+
 function verificationStringOrNot() {
-    alert('Questão 4 em construção')
+    const stringOrNumber = 4
+
+    if (typeof stringOrNumber == 'string') {
+        alert('É uma string')
+    } else {
+        alert('Não é uma string')
+    }
 }
 
 /* 5 - Crie um script que declare uma variável e verifique se o seu valor
@@ -39,7 +52,12 @@ exiba a mensagem "Não é um booleano"
 */
 
 function verificationBooleanOrNot() {
-    alert('Questão 5 em construção')
+    const isBoolean = true
+    if (typeof isBoolean == 'boolean') {
+        alert('É um booleano')
+    } else {
+        alert('Não é um booleano')
+    }
 }
 
 // 6 - Crie um script que declare duas variáveis e exiba o resultado da subtração entre elas.       
@@ -74,7 +92,13 @@ exiba a mensagem "É um número par", caso contrário, exiba a mensagem "Não é
 */
 
 function showPar() {
-    alert('Questão 9 em construção')
+    const isEvenNumber = 4
+
+    if (isEvenNumber % 2 == 0) {
+        alert('É um número par')
+    } else {
+        alert('Não é um número par')
+    }
 }
 
 /* 10 - Crie um script que declare uma variável e verifique se o seu valor é um número ímpar. Se for,
@@ -82,7 +106,14 @@ exiba a mensagem "É um número ímpar", caso contrário, exiba a mensagem "Não
 */
 
 function showImpar() {
-    alert('Questão 10 em construção')
+    const isOddNumber = 5
+
+    if (isOddNumber % 2 != 0) {
+        alert('É um número ímpar')
+    } else {
+        alert('Não é um número ímpar')
+    }
+
 }
 
 
